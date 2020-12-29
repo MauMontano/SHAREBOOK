@@ -1,6 +1,6 @@
 /* Backgrounds */
 .root {
-    -fx-background-color: linear-gradient(from 0% 0% to 0% 90%, #23136a, #101010);
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 90%, #3e0979, #119cda);
     /*-fx-background-color: linear-gradient(from 0% 0% to 0% 90%, #311b92, #212121);*/
 }
 .no-background {
@@ -12,11 +12,27 @@
 .text-white {
     -fx-stroke: #FFFFFF;
     -fx-text-fill: #FFFFFF;
-    -fx-fill: #FFF;
+    -fx-fill: #FF00FF;
+    -fx-font-family: fantasy;
+    -fx-font-style: normal;
+    -fx-font-weight: normal;
+}
+.text-title {
+    -fx-stroke: #3e0979;
+    -fx-text-fill: #FFFFFF;
+    -fx-fill: #FF00FF;
+    -fx-font-family: fantasy;
+    -fx-font-style: normal;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+#questionText{
+    -fx-font-size: 12px;
+    -fx-stroke: #3e0979;
 }
 .link-button {
     -fx-background-color: transparent;
-    -fx-text-fill: #0052d4;
+    -fx-text-fill: #3e0979;
     -fx-text-alignment: center;
     -fx-wrap-text: true;
     -fx-underline: true;
@@ -24,39 +40,39 @@
 
 /* Text inputs */
 .text-field {
-    -fx-background-color: #525252;
-    -fx-text-fill: #CDCDCD;
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #3e0979;
     -fx-effect: dropshadow(three-pass-box, #FFFFFFAA, 5, 0, 0, 0);
 }
 
 /* Combo box */
 .combo-box {
-    -fx-background-color: #232323;
+    -fx-background-color: #3e0979;
     -fx-border-color: #BABABA;
-    -fx-text-fill: #DEDEDE;
+    -fx-text-fill: #3e0979;
     -fx-border-radius: 5px;
     -fx-fill: #FFF;
 }
 
 .combo-box .list-cell {
-    -fx-background-color: #454545;
-    -fx-text-fill: #CDCDCD;
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #3e0979;
     -fx-border-radius: 5px;
     -fx-fill: #CDCDCD;
 }
 
 .combo-box .list-cell:hover {
-    -fx-background-color: #121212;
-    -fx-text-fill: #AAAAAA;
-    -fx-fill: #AAAAAA;
+    -fx-background-color: #3e0979;
+    -fx-text-fill: #FFFFFF;
+    -fx-fill: #FFFFFF;
 }
 
 /* Progress bar */
 .progress-bar .bar {
-    -fx-background-color: #FFFFFF;/* linear-gradient(to left, #BABABA 50%, #21212122 50%);*/
+    -fx-background-color: #3e0979;/* linear-gradient(to left, #BABABA 50%, #21212122 50%);*/
 }
 .progress-bar .track{
-    -fx-background-color: #000000;
+    -fx-background-color: #FFFFFF;
     /*-fx-background-color: #552fff;*/
 }
 
@@ -71,17 +87,21 @@
 
 /* Button styles */
 .main-button {
-    -fx-background-color: #45494a;
+    -fx-background-color: transparent;
+    -fx-border-color: #3e0979;
     -fx-text-alignment: center;
-    -fx-text-fill: #FFFFFF;
-    -fx-font-size: 14px;
+    -fx-text-fill: #3e0979;
+    -fx-font-size: 20px;
+    -fx-font-family: sans-serif;
     -fx-effect: dropshadow(three-pass-box, #FFFFFFCC, 5, 0, 0, 0);
 }
 .main-button:hover {
-    -fx-background-color: #2e3031;
+    -fx-background-color: #3e0979;
+    -fx-text-fill: #FFFFFF;
     -fx-effect: dropshadow(three-pass-box, #FFFFFFCC, 10, 0, 0, 0);
 }
 .main-button:pressed {
-    -fx-background-color: #161617;
+    -fx-background-color: #3e0979;
+    -fx-text-fill: #FFFFFF;
     -fx-effect: none;
 }
