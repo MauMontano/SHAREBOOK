@@ -10,25 +10,25 @@
 
 /* Text styles */
 .text-white {
-    -fx-stroke: #FFFFFF;
     -fx-text-fill: #FFFFFF;
-    -fx-fill: #FF00FF;
-    -fx-font-family: fantasy;
+    -fx-fill: #FFFFFF;
+    -fx-font-family: sans-serif;
     -fx-font-style: normal;
     -fx-font-weight: normal;
+    -fx-stroke: none;
 }
 .text-title {
-    -fx-stroke: #3e0979;
     -fx-text-fill: #FFFFFF;
-    -fx-fill: #FF00FF;
-    -fx-font-family: fantasy;
+    -fx-font-family: monospace;
+    -fx-font-style: normal;
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+}
+.text-subtitle {
+    -fx-font-family: Verdana, Helvetica, sans-serif;
     -fx-font-style: normal;
     -fx-font-weight: bold;
     -fx-font-size: 18px;
-}
-#questionText{
-    -fx-font-size: 12px;
-    -fx-stroke: #3e0979;
 }
 .link-button {
     -fx-background-color: transparent;
@@ -43,6 +43,11 @@
     -fx-background-color: #FFFFFF;
     -fx-text-fill: #3e0979;
     -fx-effect: dropshadow(three-pass-box, #FFFFFFAA, 5, 0, 0, 0);
+}
+
+.error-text {
+    -fx-text-fill: #e70000;
+    -fx-stroke: none;
 }
 
 /* Combo box */
@@ -81,7 +86,7 @@
     -fx-background-color: #52525233;
 }
 /*.scroll-bar .track,*/ .scroll-bar .thumb {
-    -fx-background-color: #767676;
+    -fx-background-color: #8c4dd2;
 }
 
 
@@ -93,6 +98,7 @@
     -fx-text-fill: #3e0979;
     -fx-font-size: 20px;
     -fx-font-family: sans-serif;
+    -fx-border-width: 2px;
     -fx-effect: dropshadow(three-pass-box, #FFFFFFCC, 5, 0, 0, 0);
 }
 .main-button:hover {

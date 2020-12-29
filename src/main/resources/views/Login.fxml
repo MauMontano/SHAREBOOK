@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import java.net.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
@@ -15,34 +16,44 @@
             <rowConstraints>
                 <RowConstraints vgrow="SOMETIMES" />
                 <RowConstraints vgrow="SOMETIMES" />
-                <RowConstraints vgrow="SOMETIMES" />
-                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="NEVER" />
+                <RowConstraints fillHeight="false" vgrow="NEVER" />
                 <RowConstraints vgrow="NEVER" />
                 <RowConstraints fillHeight="false" vgrow="NEVER" />
                 <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints />
+            <RowConstraints />
             </rowConstraints>
 
-            <!-- Login label -->
-            <Label alignment="CENTER" text="SHAREBOOK" styleClass="text-title" textAlignment="CENTER" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                <GridPane.margin>
-                    <Insets bottom="10.0" top="10.0" />
-                </GridPane.margin>
-            </Label>
-
             <!-- ShareBook label -->
-            <Label text="Login" styleClass="text-title" GridPane.columnIndex="0" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <Label text="Login" GridPane.columnIndex="0" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                 <GridPane.margin>
                     <Insets bottom="20.0" top="10.0" />
                 </GridPane.margin>
+            <styleClass>
+               <String fx:value="text-subtitle" />
+               <String fx:value="text-white" />
+            </styleClass>
+            </Label>
+
+            <!-- Login label -->
+            <Label alignment="CENTER" text="SHAREBOOK" textAlignment="CENTER" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                <GridPane.margin>
+                    <Insets bottom="10.0" top="10.0" />
+                </GridPane.margin>
+            <styleClass>
+               <String fx:value="text-title" />
+               <String fx:value="text-white" />
+            </styleClass>
             </Label>
 
             <!-- username input label -->
-            <Label text="Username" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <Label text="Username" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="2">
               <GridPane.margin>
                  <Insets left="10.0" right="10.0" />
               </GridPane.margin></Label>
             <!-- username input -->
-            <TextField GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <TextField GridPane.columnIndex="0" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                 <GridPane.margin>
                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                 </GridPane.margin>
@@ -55,17 +66,18 @@
                 </GridPane.margin>
             </Label>
             <!-- password input -->
-            <PasswordField GridPane.columnIndex="0"  GridPane.halignment="CENTER" GridPane.rowIndex="5">
+            <PasswordField GridPane.columnIndex="0" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="5">
                 <GridPane.margin>
                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                 </GridPane.margin>
             </PasswordField>
 
             <!-- error label -->
-            <Label text="Error" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
-              <GridPane.margin>
-                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-              </GridPane.margin></Label>
+            <Label styleClass="error-text" text="Error" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                <GridPane.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </GridPane.margin>
+            </Label>
 
             <!-- progress bar -->
             <ProgressBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" progress="0.34" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7" GridPane.valignment="CENTER">

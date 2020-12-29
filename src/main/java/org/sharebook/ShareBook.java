@@ -58,14 +58,17 @@ public class ShareBook extends Application {
             primaryView = FXMLLoader.load(
                     new URL(InitialViewController.class.getResource("/resources/views/InitialView.fxml").toString())
             );
-
         } catch (IOException e) {
+            // TODO: handle exception
             e.printStackTrace();
             return;
         }
         Scene scene = new Scene(primaryView);
         primaryStage.setScene(scene);
         primaryStage.show();
+
+        primaryStage.setMinWidth(700);
+        primaryStage.setMinHeight(500);
     }
 
     /**
