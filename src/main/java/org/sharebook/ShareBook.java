@@ -22,7 +22,7 @@ public class ShareBook extends Application {
         Parent primaryView;
         try{
             primaryView = FXMLLoader.<GridPane>load(
-                    new URL(LoginController.class.getResource("/resources/Login.fxml").toString())
+                    new URL(LoginController.class.getResource("/resources/views/Login.fxml").toString())
             );
 
         }catch (IOException e){

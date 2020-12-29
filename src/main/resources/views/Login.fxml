@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<GridPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.sharebook.controllers.LoginController"
-            prefHeight="400.0" prefWidth="800.0"
-            stylesheets="@../css/view.css"
-            alignment="BOTTOM_CENTER"
-            hgap="5"
-            vgap="5">
-    <Label text="Hello world" GridPane.columnIndex="0" GridPane.rowIndex="0" fx:id="idHello"/>
-    <Button text="Touch"  GridPane.columnIndex="0" GridPane.rowIndex="1" onAction="#changeText" />
+<GridPane alignment="BOTTOM_CENTER" hgap="5" prefHeight="400.0" prefWidth="800.0" stylesheets="@../css/view.css" vgap="5" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.sharebook.controllers.LoginController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints vgrow="ALWAYS" />
+   </rowConstraints>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+            <TextFlow prefHeight="200.0" prefWidth="200.0">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="¿Que es SHAREBOOK?" />
+            </TextFlow>
+            <TextFlow>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SHAREBOOK es una plataforma en la que los usuarios pueden compartir reseñas de libros de distintas categoras con otros usuarios con el fin de promover el habito de la lectura de manera exponencial." />
+            </TextFlow>
 
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin></VBox>
+   </children>
 </GridPane>
