@@ -1,8 +1,87 @@
+/* Backgrounds */
 .root {
-    -fx-background-color: #46a2c2;
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 90%, #23136a, #101010);
+    /*-fx-background-color: linear-gradient(from 0% 0% to 0% 90%, #311b92, #212121);*/
 }
+.no-background {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+/* Text styles */
 .text-white {
     -fx-stroke: #FFFFFF;
     -fx-text-fill: #FFFFFF;
     -fx-fill: #FFF;
+}
+.link-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #0052d4;
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+    -fx-underline: true;
+}
+
+/* Text inputs */
+.text-field {
+    -fx-background-color: #525252;
+    -fx-text-fill: #CDCDCD;
+    -fx-effect: dropshadow(three-pass-box, #FFFFFFAA, 5, 0, 0, 0);
+}
+
+/* Combo box */
+.combo-box {
+    -fx-background-color: #232323;
+    -fx-border-color: #BABABA;
+    -fx-text-fill: #DEDEDE;
+    -fx-border-radius: 5px;
+    -fx-fill: #FFF;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #454545;
+    -fx-text-fill: #CDCDCD;
+    -fx-border-radius: 5px;
+    -fx-fill: #CDCDCD;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #121212;
+    -fx-text-fill: #AAAAAA;
+    -fx-fill: #AAAAAA;
+}
+
+/* Progress bar */
+.progress-bar .bar {
+    -fx-background-color: #FFFFFF;/* linear-gradient(to left, #BABABA 50%, #21212122 50%);*/
+}
+.progress-bar .track{
+    -fx-background-color: #000000;
+    /*-fx-background-color: #552fff;*/
+}
+
+/* scroll bar */
+.scroll-bar {
+    -fx-background-color: #52525233;
+}
+/*.scroll-bar .track,*/ .scroll-bar .thumb {
+    -fx-background-color: #767676;
+}
+
+
+/* Button styles */
+.main-button {
+    -fx-background-color: #45494a;
+    -fx-text-alignment: center;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(three-pass-box, #FFFFFFCC, 5, 0, 0, 0);
+}
+.main-button:hover {
+    -fx-background-color: #2e3031;
+    -fx-effect: dropshadow(three-pass-box, #FFFFFFCC, 10, 0, 0, 0);
+}
+.main-button:pressed {
+    -fx-background-color: #161617;
+    -fx-effect: none;
 }
