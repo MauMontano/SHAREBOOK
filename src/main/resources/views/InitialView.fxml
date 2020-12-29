@@ -22,17 +22,26 @@
         <RowConstraints vgrow="ALWAYS" valignment="CENTER" />
     </rowConstraints>
 
-    <GridPane GridPane.columnIndex="1" GridPane.rowIndex="0" vgap="10" hgap="10" GridPane.vgrow="ALWAYS" gridLinesVisible="true">
+    <GridPane GridPane.columnIndex="1" GridPane.rowIndex="0" vgap="10" hgap="10" GridPane.vgrow="ALWAYS" alignment="CENTER" gridLinesVisible="true">
         <Text GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="text-white" text="¿Que es SHAREBOOK?"/>
-        <TextFlow GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.rowSpan="2">
+        <TextFlow GridPane.columnIndex="0" GridPane.rowIndex="1">
             <Text styleClass="text-white" text="SHAREBOOK es una plataforma en la que los usuarios pueden compartir reseñas de libros de distintas categoras con otros usuarios con el fin de promover el habito de la lectura de manera exponencial." />
         </TextFlow>
 
-        <Text GridPane.columnIndex="0" GridPane.rowIndex="3" styleClass="text-white" text="¿Que es SHAREBOOK?" />
-        <TextFlow GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.rowSpan="2">
+        <Text GridPane.columnIndex="0" GridPane.rowIndex="4" styleClass="text-white" text="¿Que es SHAREBOOK?" />
+        <TextFlow GridPane.columnIndex="0" GridPane.rowIndex="5">
             <Text styleClass="text-white" text="SHAREBOOK es una plataforma en la que los usuarios pueden compartir reseñas de libros de distintas categoras con otros usuarios con el fin de promover el habito de la lectura de manera exponencial." />
         </TextFlow>
 
+        <rowConstraints>
+            <RowConstraints /> <!-- Title -->
+            <RowConstraints /> <!-- Content -->
+            <RowConstraints /> <!-- Content -->
+            <RowConstraints percentHeight="20" /> <!-- Space -->
+            <RowConstraints /> <!-- Title -->
+            <RowConstraints /> <!-- Content -->
+            <RowConstraints /> <!-- Content -->
+        </rowConstraints>
 <!--        <GridPane.margin>-->
 <!--            <Insets bottom="20.0" left="20.0" right="20.0" top="5" />-->
 <!--        </GridPane.margin>-->
