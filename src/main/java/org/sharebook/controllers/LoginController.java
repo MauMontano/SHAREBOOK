@@ -1,4 +1,4 @@
-package sharebook;
+package org.sharebook.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -8,7 +8,7 @@ import javafx.scene.control.Label;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class View implements Initializable {
+public class LoginController implements Initializable {
     //Inyecting the code
     @FXML
     private Label idHello;

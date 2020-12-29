@@ -34,7 +34,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.5</version>
                 <configuration>
-                    <mainClass>sharebook.MainFX</mainClass>
+                    <mainClass>org.sharebook.ShareBook</mainClass>
                 </configuration>
             </plugin>
             <!-- Plugin to compile the code and create the .jar with tha manifest file -->
@@ -48,7 +48,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>sharebook.MainFX</mainClass>
+                            <mainClass>org.sharebook.ShareBook</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -58,7 +58,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>sharebook.MainFX</mainClass>
+                            <mainClass>org.sharebook.ShareBook</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

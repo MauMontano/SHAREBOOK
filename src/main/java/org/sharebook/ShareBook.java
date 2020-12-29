@@ -1,4 +1,4 @@
-package sharebook;
+package org.sharebook;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -6,11 +6,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import org.sharebook.controllers.LoginController;
 
 import java.io.IOException;
 import java.net.URL;
 
-public class MainFX extends Application {
+public class ShareBook extends Application {
 
     public static void main(String[] args) {
         launch(args);
@@ -21,7 +22,7 @@ public class MainFX extends Application {
         Parent primaryView;
         try{
             primaryView = FXMLLoader.<GridPane>load(
-                    new URL(View.class.getResource("/resources/view.fxml").toString())
+                    new URL(LoginController.class.getResource("/resources/Login.fxml").toString())
             );
 
         }catch (IOException e){
