@@ -1,7 +1,8 @@
 .root {
     -fx-background-color: #46a2c2;
 }
-.text{
+.text-white {
     -fx-stroke: #FFFFFF;
     -fx-text-fill: #FFFFFF;
+    -fx-fill: #FFF;
 }
