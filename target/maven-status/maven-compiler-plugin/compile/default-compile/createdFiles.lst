@@ -1,2 +1,5 @@
 org/sharebook/ShareBook.class
-org/sharebook/controllers/LoginController.class
+org/sharebook/core/AvailableLanguage.class
+org/sharebook/controllers/Login.class
+org/sharebook/I18nable.class
+org/sharebook/controllers/InitialViewController.class

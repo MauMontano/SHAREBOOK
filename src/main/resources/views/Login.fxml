@@ -23,59 +23,59 @@
             </rowConstraints>
 
             <!-- Login label -->
-            <Label alignment="CENTER" text="ShareBooks" textAlignment="CENTER" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Label alignment="CENTER" text="SHAREBOOK" styleClass="text-title" textAlignment="CENTER" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                 <GridPane.margin>
-                    <Insets bottom="25.0" top="25.0" />
+                    <Insets bottom="10.0" top="10.0" />
                 </GridPane.margin>
             </Label>
 
             <!-- ShareBook label -->
-            <Label text="Login" GridPane.columnIndex="0" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <Label text="Login" styleClass="text-title" GridPane.columnIndex="0" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                 <GridPane.margin>
-                    <Insets bottom="20.0" top="20.0" />
+                    <Insets bottom="20.0" top="10.0" />
                 </GridPane.margin>
             </Label>
 
             <!-- username input label -->
-            <Label text="Username" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <Label text="Username" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
               <GridPane.margin>
                  <Insets left="10.0" right="10.0" />
               </GridPane.margin></Label>
             <!-- username input -->
-            <TextField GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <TextField GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                 <GridPane.margin>
                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                 </GridPane.margin>
             </TextField>
 
             <!-- password input label -->
-            <Label text="Password" textAlignment="RIGHT" GridPane.rowIndex="3">
+            <Label text="Password" textAlignment="RIGHT" GridPane.rowIndex="4">
                 <GridPane.margin>
                     <Insets left="10.0" right="10.0" />
                 </GridPane.margin>
             </Label>
             <!-- password input -->
-            <PasswordField GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <PasswordField GridPane.columnIndex="0"  GridPane.halignment="CENTER" GridPane.rowIndex="5">
                 <GridPane.margin>
                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                 </GridPane.margin>
             </PasswordField>
 
             <!-- error label -->
-            <Label text="Error" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+            <Label text="Error" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
               <GridPane.margin>
                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
               </GridPane.margin></Label>
 
             <!-- progress bar -->
-            <ProgressBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" progress="0.34" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+            <ProgressBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" progress="0.34" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7" GridPane.valignment="CENTER">
                 <GridPane.margin>
                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                 </GridPane.margin>
             </ProgressBar>
 
             <!-- Login button -->
-            <Button mnemonicParsing="false" styleClass="main-button" text="Login" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+            <Button mnemonicParsing="false" styleClass="main-button" text="Login" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="8">
                 <GridPane.margin>
                     <Insets bottom="30.0" top="30.0" />
                 </GridPane.margin>
