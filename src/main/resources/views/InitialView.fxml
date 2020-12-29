@@ -5,13 +5,14 @@
 <?import javafx.scene.text.*?>
 
 <?import java.net.URL?>
+<?import javafx.scene.control.Button?>
 <GridPane
         xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
         hgap="5"
         vgap="5"
         prefHeight="400.0"
         prefWidth="800.0"
-        fx:controller="org.sharebook.controllers.LoginController">
+        fx:controller="org.sharebook.controllers.InitialViewController">
 
     <columnConstraints>
         <ColumnConstraints hgrow="ALWAYS" halignment="CENTER" />
@@ -22,17 +23,29 @@
         <RowConstraints vgrow="ALWAYS" valignment="CENTER" />
     </rowConstraints>
 
-    <GridPane GridPane.columnIndex="1" GridPane.rowIndex="0" vgap="10" hgap="10" GridPane.vgrow="ALWAYS" alignment="CENTER" gridLinesVisible="true">
-        <Text GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="text-white" text="¿Que es SHAREBOOK?"/>
-        <TextFlow GridPane.columnIndex="0" GridPane.rowIndex="1">
+    <BorderPane GridPane.rowIndex="0" GridPane.columnIndex="0" fx:id="actionsPanel">
+        <bottom>
+            <Button fx:id="toggleLoginRegister" onAction="#onToggleLoginRegister" alignment="CENTER" />
+        </bottom>
+        <GridPane.margin>
+            <Insets bottom="20" left="20" right="20" top="20" />
+        </GridPane.margin>
+    </BorderPane>
+
+    <GridPane GridPane.rowIndex="0" GridPane.columnIndex="1" vgap="10" hgap="10" GridPane.vgrow="ALWAYS" alignment="CENTER">
+        <Text fx:id="whatIsSB" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="text-white" />
+        <TextFlow GridPane.rowIndex="1" GridPane.columnIndex="0">
+            <Text fx:id="whatIsSBDesc" styleClass="text-white"/>
+        </TextFlow>
+
+        <Text GridPane.rowIndex="4" GridPane.columnIndex="0" styleClass="text-white" text="¿Que es SHAREBOOK?" />
+        <TextFlow GridPane.rowIndex="5" GridPane.columnIndex="0">
             <Text styleClass="text-white" text="SHAREBOOK es una plataforma en la que los usuarios pueden compartir reseñas de libros de distintas categoras con otros usuarios con el fin de promover el habito de la lectura de manera exponencial." />
         </TextFlow>
 
-        <Text GridPane.columnIndex="0" GridPane.rowIndex="4" styleClass="text-white" text="¿Que es SHAREBOOK?" />
-        <TextFlow GridPane.columnIndex="0" GridPane.rowIndex="5">
-            <Text styleClass="text-white" text="SHAREBOOK es una plataforma en la que los usuarios pueden compartir reseñas de libros de distintas categoras con otros usuarios con el fin de promover el habito de la lectura de manera exponencial." />
-        </TextFlow>
-
+        <GridPane.margin>
+            <Insets bottom="20" left="20" right="20" top="5" />
+        </GridPane.margin>
         <rowConstraints>
             <RowConstraints /> <!-- Title -->
             <RowConstraints /> <!-- Content -->
@@ -42,9 +55,6 @@
             <RowConstraints /> <!-- Content -->
             <RowConstraints /> <!-- Content -->
         </rowConstraints>
-<!--        <GridPane.margin>-->
-<!--            <Insets bottom="20.0" left="20.0" right="20.0" top="5" />-->
-<!--        </GridPane.margin>-->
     </GridPane>
 
     <stylesheets>
