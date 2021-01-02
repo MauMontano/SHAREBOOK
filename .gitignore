@@ -1,5 +1,6 @@
 # IntelliJ config
 .idea/
+**/*.iml
 
 # Maven files
 target/
@@ -15,3 +16,4 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 /target/
 /.idea/
+/**/*.iml
